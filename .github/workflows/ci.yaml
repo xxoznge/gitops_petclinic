@@ -57,7 +57,7 @@ jobs:
 
       - name: Update Deployment YAML
         run: |
-          sed -i "s|image: .*|image: 605863933397.dkr.ecr.ap-northeast-2.amazonaws.com/smlee-cluster-repo:${{ github.sha }}|" k8s/deployment.yaml
+          sed -i "s|image: .*|image: 605863933397.dkr.ecr.ap-northeast-2.amazonaws.com/user07-cluster-repo:${{ github.sha }}|" k8s/deployment.yaml
 
       - name: Commit and push if there are changes
         run: |
